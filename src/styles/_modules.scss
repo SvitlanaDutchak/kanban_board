@@ -1,0 +1,37 @@
+.list {
+  background-color: $secondary-color;
+  gap: 8px;
+}
+
+.form-input {
+  &:focus {
+    border-color: transparent !important;
+    box-shadow: 0 0 0 0.25rem $secondary-color !important;
+  }
+}
+
+.form-button {
+  width: 25%;
+  color: $main-color;
+
+  &:active,
+  &:hover {
+    border: 1px solid $main-color !important;
+    font-weight: 500;
+  }
+}
+
+.page-link {
+  color: $main-color !important;
+
+  &:focus {
+    box-shadow: 0 0 0 0.25rem $secondary-color !important;
+  }
+}
+
+.active>.page-link {
+  background: $main-color !important;
+  color: white !important;
+  border: none !important;
+  font-weight: 500;
+}
